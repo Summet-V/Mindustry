@@ -1,5 +1,6 @@
 package mindustry.game;
 
+import arc.files.*;
 import arc.util.*;
 import mindustry.core.GameState.*;
 import mindustry.ctype.*;
@@ -379,6 +380,14 @@ public class EventType{
             this.ip = ip;
         }
     }
-    
+
+    public static class FileDroppedEvent{
+        public final Fi file;
+
+        public FileDroppedEvent(Fi file){
+            this.file = file;
+        }
+    }
+
 }
 

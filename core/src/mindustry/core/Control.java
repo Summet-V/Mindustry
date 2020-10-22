@@ -3,6 +3,7 @@ package mindustry.core;
 import arc.*;
 import arc.assets.*;
 import arc.audio.*;
+import arc.files.*;
 import arc.graphics.g2d.*;
 import arc.input.*;
 import arc.math.*;
@@ -536,5 +537,10 @@ public class Control implements ApplicationListener, Loadable{
                 platform.hide();
             }
         }
+    }
+
+    @Override
+    public void fileDropped(Fi file) {
+        Events.fire(new FileDroppedEvent(file));
     }
 }
