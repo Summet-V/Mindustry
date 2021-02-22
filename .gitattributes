@@ -1,1 +1,2 @@
-fastlane/**/* -linguist-detectable
+fastlane/* linguist-vendored
+
