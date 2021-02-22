@@ -1,2 +1,1 @@
-fastlane/* linguist-vendored
-
+fastlane/Fastfile linguist-language=Text
